@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <script src="./lab8.js"></script>
+</head>
+
+<body>
+    <p>
+        Create a web page that have a paragraph with some dummy text. Near the paragraph have text fields to accept the following values: <br> Border: <br>
+        <span style="color:red" id="clr">• red value </span> <br>
+        <span style="color:green" id="clr">• green value</span> <br>
+        <span style="color:blue" id="clr">• blue value</span> <br> • width <br> Background color: <br>
+        <span style="background-color:red" id="clr">• red value</span><br>
+        <span style="background-color:green" id="clr">• green value </span><br>
+        <span style="background-color:blue" id="clr">• blue value </span> • width <br> Finally, have a button that, when clicked, changes the border and background color to be as specified. You can use either the rgb() method or a color code, but you
+        should tell the user what units they are in (00-FF or 0-255).
+    </p>
+    <button onclick="show()" id="show">Show</button>
+    <script>
+        console.log("js work!");
+
+        var elems = document.getElementsByClassName('clr');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'block';
+        }
+
+        function show() {
+            if (clr.style.display == "none") {
+                clr.style.display == "";
+            } else {
+                clr.style.display == "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

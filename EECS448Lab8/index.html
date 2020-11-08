@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS448Lab8</title>
+    <script type="javascript" src="./lab8.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center">EECS448 Lab8</h1>
+    <h2>Exercise 1</h2>
+    <form name="exe1">
+        <label for="pw1">Passward: </label><br>
+        <input type="password" name="firstPW" id="pw1" value=""><br><br>
+        <label for="pw2">Confirm Passward: </label><br>
+        <input type="password" name="secondPW" id="pw2" value=""><br>
+        <button name="button" onclick="onClick()">Submit</button><br>
+    </form>
+    <br>
+    <h2>Exercise 2</h2>
+    <a href="./exe2.html">Here's Exercise2</a><br>
+    <h2>Exercise 3</h2>
+    <a href="./exe3.html">Here's Exercise3</a><br>
+    <h2>Exercise4</h2>
+    <a href="./exe4.html">Here's Exercise4</a><br>
+    <script>
+        console.log("js work!");
+
+        function onClick() {
+            //var pw1 = exe1.pw1.value;
+            //var pw2 = exe1.pw2.value;
+            var pw1 = document.getElementById("pw1").value;
+            var pw2 = document.getElementById("pw2").value;
+            console.log(pw1);
+            console.log(pw2);
+            //alert(pw1);
+            //alert(this.pw2);
+            alert(pw1 == pw2);
+            /*if (pw1 == pw2) {
+                alert("Passward Correct");
+            } else {
+                alert("Passward Error");
+            }*/
+        }
+    </script>
+</body>
+
+</html>
